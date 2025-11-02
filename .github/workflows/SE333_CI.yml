@@ -24,13 +24,13 @@ jobs:
         run: mvn test
 
       - name: Upload Checkstyle Result
-        uses: actions/upload-artifact
+        uses: actions/upload-artifact@v4
         with:
           name: checkstyle.xml
           path: target/checkstyle-result.xml
 
       - name: Jacoco Report
-        uses: actions/upload-artifact
+        uses: actions/upload-artifact@v4
         with:
           name: jacoco.xml
           path: target/site/jacoco/jacoco.xml
